@@ -3,6 +3,14 @@ h1 {
     color: rgba(99, 43, 211, 0.87);
 }
 .money-calculate{
-    height: 810px ; 
+    height: 700px ; 
     width: 705px ;
+}
+.calculate-button {
+    background-color: rgba(99, 43, 211, 0.87);
+    color: white;
+}
+.calculate-button:hover{
+    color: aliceblue;
+    background-color: rgba(111, 55, 221, 0.87);
 }
