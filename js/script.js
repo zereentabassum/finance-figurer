@@ -13,14 +13,26 @@ const balance = document.getElementById('balance');
 
 //---- total expenses calculation function----
 function expenseCalculate(foodValue, rentValue, clothesValue){
-   totalExpenses.innerText = parseInt(foodValue.value) + parseInt(rentValue.value) + parseInt(clothesValue.value);
+
+    if ( foodValue.value<0 || rentValue.value<0 || clothesValue.value<0 || incomeValue.value<0) {
+        let errorMessage = document.getElementById('error-message');
+        errorMessage.style.display = 'block';
+    }
+    else if (foodValue.value==0 || rentValue.value==0 || clothesValue.value==0 || incomeValue.value==0){
+        let failMessage = document.getElementById('fail-message');
+        failMessage.style.display = 'block';
+    }
+    
+    else{
+   totalExpenses.innerText = Number(foodValue.value) + Number(rentValue.value) + Number(clothesValue.value);
    foodValue.value = '';
    rentValue.value = ''; 
    clothesValue.value = '';
 }
+}
 //------- Balance and Remaining Balance calculation function-------
-function remainingMoney(firstValue, secondValue, balanceRemained) {
-    return parseInt(secondValue) - parseInt(firstValue);
+function remainingMoney(firstValue, secondValue) {
+    return Number(secondValue - firstValue);
 }
 
 

@@ -26,3 +26,9 @@ input{
     background-color: rgb(226, 223, 223);
     border: solid 1px grey;
 }
+.error{
+    position: fixed;
+    right: 0;
+    text-align: center;
+    display: none;
+}
