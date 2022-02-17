@@ -1,16 +1,28 @@
 /*------------------ styles ----------------*/
+/* header style */
 h1 {
-    color: rgba(99, 43, 211, 0.87);
+    color: rgba(3, 148, 76, 0.87);
 }
+/* main style */
+/*---- picture styles ----*/
 .money-calculate{
     height: 700px ; 
     width: 705px ;
 }
+/*---- calculation form styles ----*/
+.form-section{
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
 .calculate-button {
-    background-color: rgba(99, 43, 211, 0.87);
+    background-color: rgba(24, 167, 95, 0.87);
     color: white;
 }
 .calculate-button:hover{
     color: aliceblue;
-    background-color: rgba(111, 55, 221, 0.87);
+    background-color: rgba(12, 197, 105, 0.87);
+}
+input{
+    background-color: rgb(226, 223, 223);
+    border: solid 1px grey;
 }
